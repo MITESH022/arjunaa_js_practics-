@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1> jugnu harami</h1> -->
+    <script>
+
+        function findLargest(n1, n2) {
+        //    console.log(n1,n2);
+            if (n1 > n2)
+             {
+                return `${n1} is largest number`
+                // console.log(`${n1} is largest number`);
+
+            }
+            else if (n1 === n2)
+             {
+
+                return `${n1} and ${n2} is equal number`
+                // console.log(`${n1} and ${n2} is equal number`);
+
+             }
+            else
+             { 
+
+                return `${n2} is largest number`
+                // console.log( `${n2} is largest number`);
+
+            }
+
+               
+        }
+
+        console.log(findLargest(21, 45)); //"45 the largest number"
+        console.log(findLargest(34, 18)); //"34 is the largest number"
+        console.log(findLargest(41, 41)); //"41 is equal to 41"
+    </script>
+</body>
+
+</html>

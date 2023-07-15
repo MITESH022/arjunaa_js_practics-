@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+function evalNumbers(num1, num2, operation) {
+  let result;
+
+  if (operation === "add") {
+    result = num1 + num2;
+    return `Sum of ${num1} and ${num2} is ${result}`;
+  } else if (operation === "subtract") {
+    result = num1 - num2;
+    return `Difference of ${num1} and ${num2} is ${result}`;
+  } else if (operation === "multiply") {
+    result = num1 * num2;
+    return `Product of ${num1} and ${num2} is ${result}`;
+  } else if (operation === "divide") {
+    result = num1 / num2;
+    return `Division of ${num1} and ${num2} is ${result}`;
+  } else if (operation === "modulus") {
+    result = num1 % num2;
+    return `Modulus of ${num1} and ${num2} is ${result}`;
+  } else {
+    return `${operation} is an invalid operation`;
+  }
+}
+
+console.log(evalNumbers(15, 10, "add")); // Output: "Sum of 15 and 10 is 25"
+console.log(evalNumbers(20, 8, "subtract")); // Output: "Difference of 20 and 8 is 12"
+console.log(evalNumbers(12, 4, "multiply")); // Output: "Product of 12 and 4 is 48"
+console.log(evalNumbers(28, 7, "divide")); // Output: "Division of 28 and 7 is 4"
+console.log(evalNumbers(22, 3, "modulus")); // Output: "Modulus of 22 and 3 is 1"
+console.log(evalNumbers(31, 3, "square")); // Output: "Square is an invalid operation"
+
+    </script>
+</body>
+</html>

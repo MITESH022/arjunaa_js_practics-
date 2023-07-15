@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isValidNumber(value) {
+  if (!isNaN(value)) {  
+    return `${value} is a valid number`;
+  } else {
+    return `${value} is not a number`;
+  }
+
+  // if (Number(value)) {  
+  //    return `${value} is a valid number`;
+  //  } else {
+  //    return `${value} is not a number`;
+  //  }
+
+  // console.log(typeof value);
+  console.log(typeof Number(value));
+
+}
+
+console.log(isValidNumber(11)); // Output: "11 is a valid number"
+console.log(isValidNumber("19")); // Output: "19 is a valid number"
+console.log(isValidNumber("xyz")); // Output: "xyz is not a number"
+console.log(isValidNumber("17.5")); // Output: "17.5 is a valid number"
+console.log(isValidNumber("21F")); // Output: "21F is not a number"
+
+
+// number
+// ifelse2.html:24 11
+// ifelse2.html:23 string
+// ifelse2.html:24 19
+// ifelse2.html:23 string
+// ifelse2.html:24 NaN
+// ifelse2.html:23 string
+// ifelse2.html:24 17.5
+// ifelse2.html:23 string
+// ifelse2.html:24 NaN
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkInRange(number, rangeStart, rangeEnd) {
+  if (number >= rangeStart && number <= rangeEnd) {
+    return `${number} is between the range ${rangeStart} and ${rangeEnd}`;
+  } else {
+    return `${number} is outside the range ${rangeStart} and ${rangeEnd}`;
+  }
+}
+
+console.log(checkInRange(15, 11, 30)); // Output: "15 is between the range 11 and 30"
+console.log(checkInRange(20, 34, 51)); // Output: "20 is outside the range 34 and 51"
+
+    </script>
+</body>
+</html>
